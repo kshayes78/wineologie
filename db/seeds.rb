@@ -97,11 +97,16 @@ f15 = Food.create(
     image: "https://images.vivino.com/backgrounds/foods/thumbs/15_spicyfood_932x810.png",
     url: "https://www.vivino.com/wine-news/food-pairing/spicy-food",
 )
+f16 = Food.create(
+    name: "Goat Cheese",
+    image: "https://images.vivino.com/backgrounds/foods/thumbs/39_goatcheese_932x810.png",
+    url: "",
+)
 
 puts "🍷 Seeding Wines..." 
 w1 = Wine.create(
     name: "Cabernerio No.8 Cabernet Sauvignon, 2019",
-    description: "James Suckling-Maipo Valley, Chile - Aromas of black fruit with wet-stone, leather, and earthy  undertones. It's full-bodied with polished tannins. Dusty and layered in the mouth with a round, creamy feel. Slightly earthy.",
+    description: "Aromas of black fruit with wet-stone, leather, and earthy  undertones. It's full-bodied with polished tannins. Dusty and layered in the mouth with a round, creamy feel. Slightly earthy.",
     price: 19.99,
     highly_rated: true,
     country_state: "Chile",
@@ -116,7 +121,7 @@ w1 = Wine.create(
 )
 w2 = Wine.create(
     name: "Chateau Pierre De Montignac Medoc, 2018",
-    description:"Wine Enthusiast - Medoc, Bordeaux, France - Attractive wood-aging flavors anda smoothness have polished this wine and given it richness. Blackberry fruits are integrating with the tannins and structure.",
+    description:"Attractive wood-aging flavors anda smoothness have polished this wine and given it richness. Blackberry fruits are integrating with the tannins and structure.",
     price: 19.99,
     highly_rated: true,
     country_state: "France",
@@ -131,7 +136,7 @@ w2 = Wine.create(
 )
 w3 = Wine.create(
     name: "Asua Rioja Crianza",
-    description:"Wine Advocate-Rioja, Spain - The oak is very subtle and in the background with some spices. It's aromatic and has a lot of finesse. The palate is juicy and balance with the same fresheness found in the nose and a dry, serious, and chalky finish. Delicious.",
+    description:"The oak is very subtle and in the background with some spices. It's aromatic and has a lot of finesse. The palate is juicy and balance with the same fresheness found in the nose and a dry, serious, and chalky finish. Delicious.",
     price: 19.99,
     highly_rated: true,
     country_state: "Spain",
@@ -146,7 +151,7 @@ w3 = Wine.create(
 )
 w4 = Wine.create(
     name: "Low Hanging Fruit Sweet Red",
-    description:"California- The Sweet Red presents aromas of black cherry and raspberry jam with slight notes of Concord. The wine is light to medium-bodied and remarkably smooth with fresh fruit acidity and a velvety soft finish. Keep it simple, go after the Low Hanging Fruit. The obvious choice.",
+    description:"The Sweet Red presents aromas of black cherry and raspberry jam with slight notes of Concord. The wine is light to medium-bodied and remarkably smooth with fresh fruit acidity and a velvety soft finish. Keep it simple, go after the Low Hanging Fruit. The obvious choice.",
     price: 10.49,
     highly_rated: false,
     country_state: "California",
@@ -161,7 +166,7 @@ w4 = Wine.create(
 )
 w5 = Wine.create(
     name: "Blue Canyon Estate Grown Pinot Noir Monterey, 2019",
-    description:"Decanter-Monterey, California - Delicate sweet cherry and cooked strawberry with blue fruit notes, topped off by toasted wood and clove with nice grippy tannins.",
+    description:"Delicate sweet cherry and cooked strawberry with blue fruit notes, topped off by toasted wood and clove with nice grippy tannins.",
     price: 16.99,
     highly_rated: true,
     country_state: "California",
@@ -171,12 +176,12 @@ w5 = Wine.create(
     ml: 750,
     taste: "Black Cherry, Vanilla",
     body: "Medium-bodied",
-    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/hbb/h09/15986499551262.png",
-    url: "https://www.totalwine.com/wine/red-wine/tempranillo/asua-rioja-crianza/p/220508750?s=606&igrules=true"
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/hcf/h0c/15986498699294.png",
+    url: "https://www.totalwine.com/wine/red-wine/pinot-noir/blue-canyon-estate-grown-pinot-noir-monterey/p/185635750?s=606&igrules=true"
 )
 w6 = Wine.create(
     name: "Caymus Cabernet Sauvignon",
-    description:"Wine Spectator-Napa Valley, California - A rich, showy style, with a very creamy texture to its mix of warmed vanilla, plum, and boysenberry puree, and melted black licorice flavors. A mocha note swrils around the fruit on the finish",
+    description:"A rich, showy style, with a very creamy texture to its mix of warmed vanilla, plum, and boysenberry puree, and melted black licorice flavors. A mocha note swrils around the fruit on the finish",
     price: 99.97,
     highly_rated: true,
     country_state: "California",
@@ -191,7 +196,7 @@ w6 = Wine.create(
 )
 w7 = Wine.create(
     name: "Beaulieu Vineyard Georges De Latour Private Reserve Cabernet Sauvignon, 2016",
-    description:"James Suckling-Napa Valley, California - Extremely aromatic. Full-bodied, tight and focused with polished and chewy tannins. Blackberries, currants, walnuts and hazelnuts on the palate. Solid core of fruit and ripe tannins. Classically structured.",
+    description:"Extremely aromatic. Full-bodied, tight and focused with polished and chewy tannins. Blackberries, currants, walnuts and hazelnuts on the palate. Solid core of fruit and ripe tannins. Classically structured.",
     price: 115.97,
     highly_rated: true,
     country_state: "California",
@@ -206,7 +211,7 @@ w7 = Wine.create(
 )
 w8 = Wine.create(
     name: "Stag's Leap Cask, 23, 2017",
-    description:"Wine Advocate- Stag's Leap, Napa,CA - very deep purple-black colored with pronounced notes of creme de cassis, mocha, plum preserves and unsmoked cigars with touches of dried herbs, fragrant soil and iron ore. Medium to full-bodied, the palate has a great intensity of ripe black fruit.",
+    description:"Very deep purple-black colored with pronounced notes of creme de cassis, mocha, plum preserves and unsmoked cigars with touches of dried herbs, fragrant soil and iron ore. Medium to full-bodied, the palate has a great intensity of ripe black fruit.",
     price: 279.99,
     highly_rated: true,
     country_state: "California",
@@ -221,7 +226,7 @@ w8 = Wine.create(
 )
 w9 = Wine.create(
     name: "MollyDooker Cabernet Gigglepot, 2018",
-    description:"Wine Spectator-McLaren Vale, Australia - Rich and opulent, with notes of chicory, chai tea, caramel, and cream soda surrounding a core of kirsch, maraschino cherry and framboise. The tannins are polished and smooth, with a generous, spicy finish.",
+    description:"Rich and opulent, with notes of chicory, chai tea, caramel, and cream soda surrounding a core of kirsch, maraschino cherry and framboise. The tannins are polished and smooth, with a generous, spicy finish.",
     price: 59.99,
     highly_rated: true,
     country_state: "Australia",
@@ -236,7 +241,7 @@ w9 = Wine.create(
 )
 w10 = Wine.create(
     name: "Mascota Vineyards Unanime, 2017",
-    description:"Jams Suckling-Mendoza, Argentina - This is a rich, dense red with blackberry and blueberry aromas and flavors. Extremely well-crafted tannins. Hints of vanilla to the ripe fruit at the end. Incredible value...already beautiful to taste.",
+    description:"This is a rich, dense red with blackberry and blueberry aromas and flavors. Extremely well-crafted tannins. Hints of vanilla to the ripe fruit at the end. Incredible value...already beautiful to taste.",
     price: 19.99,
     highly_rated: true,
     country_state: "Argentina",
@@ -251,7 +256,7 @@ w10 = Wine.create(
 )
 w11 = Wine.create(
     name: "Sugarbird Sweet Shiraz",
-    description:"Western Cape, South Africa - This sweet Shiraz displays succulent berry flavors and dark chocolate undertones. Best served slightly chilled, one to be shared amongst friends, and complements any occasion as a fun, versatile companion for an array of dishes.",
+    description:"This sweet Shiraz displays succulent berry flavors and dark chocolate undertones. Best served slightly chilled, one to be shared amongst friends, and complements any occasion as a fun, versatile companion for an array of dishes.",
     price: 8.99,
     highly_rated: false,
     country_state: "South Africa",
@@ -266,7 +271,7 @@ w11 = Wine.create(
 )
 w12 = Wine.create(
     name: "Bevan Proprietary Red Sugarloaf",
-    description:"Wine Advocate - Napa, CA - The full-bodied palate is charged with electric red, black, and blue fruited vivacity, framed by finely grained tannins and fantastic tension, finishing long and minerally. This gorgeous wine has so much infectious energy, it practically tingles on your tongue.",
+    description:"The full-bodied palate is charged with electric red, black, and blue fruited vivacity, framed by finely grained tannins and fantastic tension, finishing long and minerally. This gorgeous wine has so much infectious energy, it practically tingles on your tongue.",
     price: 199.97,
     highly_rated: true,
     country_state: "California",
@@ -281,7 +286,7 @@ w12 = Wine.create(
 )
 w13 = Wine.create(
     name: "Chateau De La Chapell Blaye Cotes De Bordeaux, 2018",
-    description:"Decanter-Bordeaux, France - Decanter Best in Show Winner - This unoaked wine is a saturated deep purpl-black in color with aromas of warm black currant and black cherry fruits and sweet, fresh plums. On the palate, it is  a torrent of pure fruit, soft tanins and juicy acidity.",
+    description:"Decanter Best in Show Winner - This unoaked wine is a saturated deep purpl-black in color with aromas of warm black currant and black cherry fruits and sweet, fresh plums. On the palate, it is  a torrent of pure fruit, soft tanins and juicy acidity.",
     price: 24.99,
     highly_rated: true,
     country_state: "France",
@@ -296,7 +301,7 @@ w13 = Wine.create(
 )
 w14 = Wine.create(
     name: "ReLusso Rosso Frizzante",
-    description:"Beverage Dynamics-Piedmont, Italy - A fruit forward fizzy red that is packed with fresh raspberries, bright cherries, backed plums, and juicy strawberry notes. Pleasant low alcohol and cool service temperature maks this light, fresh wine enjoyable and easy drinking.",
+    description:"A fruit forward fizzy red that is packed with fresh raspberries, bright cherries, backed plums, and juicy strawberry notes. Pleasant low alcohol and cool service temperature maks this light, fresh wine enjoyable and easy drinking.",
     price: 14.99,
     highly_rated: true,
     country_state: "Italy",
@@ -311,7 +316,7 @@ w14 = Wine.create(
 )
 w15 = Wine.create(
     name: "Chateau Margaux Margaux, 2016",
-    description:"Wine Advocate - Margaux, Bordeaux, France - glamorous red currants, sweet candied violets, kirsch, and crushed black currant scents followed by notions of tilled black soil, forest floor, cast iron pan and cigar box with subtle wafts of lavender and oolong tea",
+    description:"Glamorous red currants, sweet candied violets, kirsch, and crushed black currant scents followed by notions of tilled black soil, forest floor, cast iron pan and cigar box with subtle wafts of lavender and oolong tea",
     price: 899.97,
     highly_rated: true,
     country_state: "France",
@@ -326,7 +331,7 @@ w15 = Wine.create(
 )
 w16 = Wine.create(
     name: "Ulysses Red Napa, 2016",
-    description:"James Suckling-California- Aromas of sweet berries, fresh herbs, currant bush and licorice. Terracotta, full body, layered and soft, velvety, and focused tannins. Breathtaking texture. the focus and polish is phenomenal. Harmonious, enticing, fascinating, and thoughtful.",
+    description:"Aromas of sweet berries, fresh herbs, currant bush and licorice. Terracotta, full body, layered and soft, velvety, and focused tannins. Breathtaking texture. the focus and polish is phenomenal. Harmonious, enticing, fascinating, and thoughtful.",
     price: 199.97,
     highly_rated: true,
     country_state: "California",
@@ -341,7 +346,7 @@ w16 = Wine.create(
 )
 w17 = Wine.create(
     name: "The Prisoner Red Blend",
-    description:"California - This red blend shows aromas of ripe cherry and cedar with hints of rose petal and sweet oak. The lovely entry leads into a savory mid palate. Ripe fig and black currant dominate the finish with soft well integrated tannins.",
+    description:"This red blend shows aromas of ripe cherry and cedar with hints of rose petal and sweet oak. The lovely entry leads into a savory mid palate. Ripe fig and black currant dominate the finish with soft well integrated tannins.",
     price: 99.99,
     highly_rated: false,
     country_state: "California",
@@ -356,7 +361,7 @@ w17 = Wine.create(
 )
 w18 = Wine.create(
     name: "Chateau Haut Bages Liberal Pauillac, 2016",
-    description:"Vinous-5th Growth, Pauillac, Bordeaux, France- ""The 2016 Haut-Bages Liberal has turned out beautifully. Rose petals, lavender and sweet red cherry are some of the notes that grace this fine, translucent Pauillac. Medium in body and precise, with exquisite finesse and nuance.",
+    description:"The 2016 Haut-Bages Liberal has turned out beautifully. Rose petals, lavender and sweet red cherry are some of the notes that grace this fine, translucent Pauillac. Medium in body and precise, with exquisite finesse and nuance.",
     price: 79.99,
     highly_rated: true,
     country_state: "France",
@@ -371,7 +376,7 @@ w18 = Wine.create(
 )
 w19 = Wine.create(
     name: "Inniskillin Ice Wine Cabernet Franc, 2017",
-    description:"Wine Enthusiast -Ontario, Canada - A spectacular year for ice wines, this sweet, exotic and beautiful wine-a stunning burnt-orange hue-boasts 244 g/L of residual sugar, yet is not a bit syrupy. Strawberry jam, blackberry pie, toffee, coffee gelato, cinnamon spice and more.",
+    description:"A spectacular year for ice wines, this sweet, exotic and beautiful wine-a stunning burnt-orange hue-boasts 244 g/L of residual sugar, yet is not a bit syrupy. Strawberry jam, blackberry pie, toffee, coffee gelato, cinnamon spice and more.",
     price: 99.99,
     highly_rated: true,
     country_state: "Canada",
@@ -401,7 +406,7 @@ w20 = Wine.create(
 )
 w21 = Wine.create(
     name: "Orin Swift Abstract Red",
-    description:"Wine Spectator-California - Ripe and plump, with dried cherry, roasted sage, black olive and smoked pepper accents that finish with firm tannins. Syrah, Petite Sirah, Grenache, Cabernet Sauvignon and Zinfandel.",
+    description:"Ripe and plump, with dried cherry, roasted sage, black olive and smoked pepper accents that finish with firm tannins. Syrah, Petite Sirah, Grenache, Cabernet Sauvignon and Zinfandel.",
     price: 30.99,
     highly_rated: true,
     country_state: "California",
@@ -416,7 +421,7 @@ w21 = Wine.create(
 )
 w22 = Wine.create(
     name: "Bitch Grenache Wine",
-    description:"Aragon, Spain- Dark cherry and raspberry aromas are underpinned with spicy, peppery notes with hints of anise. Displays extraordinary natural acid balance, even at elevated ripeness levels. Conveys vibrant, juicy fruit with a very soft, sweet-fruited palate structure.",
+    description:"Dark cherry and raspberry aromas are underpinned with spicy, peppery notes with hints of anise. Displays extraordinary natural acid balance, even at elevated ripeness levels. Conveys vibrant, juicy fruit with a very soft, sweet-fruited palate structure.",
     price: 18.49,
     highly_rated: false,
     country_state: "Spain",
@@ -431,7 +436,7 @@ w22 = Wine.create(
 )
 w23 = Wine.create(
     name: "Olema Pinot Noir Sonoma County, 2019",
-    description:"James Suckling-Sonoma County, California- ""Crushed strawberry, cherry, lemon zest, button-mushroom and cedar aromas. It's medium-bodied with silky tannins and bright acidity. Bright, pure-fruit layers lead to an energetic finish.",
+    description:"Crushed strawberry, cherry, lemon zest, button-mushroom and cedar aromas. It's medium-bodied with silky tannins and bright acidity. Bright, pure-fruit layers lead to an energetic finish.",
     price: 19.99,
     highly_rated: true,
     country_state: "California",
@@ -446,7 +451,7 @@ w23 = Wine.create(
 )
 w24 = Wine.create(
     name: "McBride Sisters Collection Black Girl Magic Red Blend",
-    description:"California - A complex, well-crafted and inviting wine that shows tobacco and vanilla bean notes alongside generous plum, raspberry, and blackberry. The ripe and juicy mouth offers the chocolate cherry flavors typical of Merlot with the full body and peppery spice of Cabernet.",
+    description:"A complex, well-crafted and inviting wine that shows tobacco and vanilla bean notes alongside generous plum, raspberry, and blackberry. The ripe and juicy mouth offers the chocolate cherry flavors typical of Merlot with the full body and peppery spice of Cabernet.",
     price: 27.99,
     highly_rated: false,
     country_state: "California",
@@ -461,7 +466,7 @@ w24 = Wine.create(
 )
 w25 = Wine.create(
     name: "B Lovely Red",
-    description:"Washington- The perfect choice if you are looking for a juicy sweet red wine that is elegant enough to take as a gift. This light-bodied wine, full of cherry and berry flavors and made mostly with Merlot grapes, pairs nicely with food, especially spicy cuisine.",
+    description:"The perfect choice if you are looking for a juicy sweet red wine that is elegant enough to take as a gift. This light-bodied wine, full of cherry and berry flavors and made mostly with Merlot grapes, pairs nicely with food, especially spicy cuisine.",
     price: 13.99,
     highly_rated: false,
     country_state: "Washington",
@@ -478,7 +483,7 @@ w25 = Wine.create(
 
 w26 = Wine.create(
     name: "Olema Sauvignon Blanc Loire, 2020",
-    description: "James Suckling-Loire Valley, France- ""Aromas of grapefruit zest, fresh pear, green papaya and flint. It's medium-bodied with bright, tangy acidity and a gently waxy texture. Fresh finish."" Cheers!",
+    description: "Aromas of grapefruit zest, fresh pear, green papaya and flint. It's medium-bodied with bright, tangy acidity and a gently waxy texture. Fresh finish."" Cheers!",
     price: 15.99,
     highly_rated: true,
     country_state: "France",
@@ -493,7 +498,7 @@ w26 = Wine.create(
 )
 w27 = Wine.create(
     name: "Courtney Benham Sauvignon Blanc Terroir Selection",
-    description:"Sonoma County, CA- The Terroir Selection series is all about finding the best wines throughout California, not limiting to Napa Valley. This crisp and light Sauvignon Blanc is sourced from multiple AVA's within Sonoma County. It has vibrant flavors of guava, honeysuckle and citrus.",
+    description:"The Terroir Selection series is all about finding the best wines throughout California, not limiting to Napa Valley. This crisp and light Sauvignon Blanc is sourced from multiple AVA's within Sonoma County. It has vibrant flavors of guava, honeysuckle and citrus.",
     price: 17.99,
     highly_rated: false,
     country_state: "California",
@@ -507,23 +512,23 @@ w27 = Wine.create(
     url: "https://www.totalwine.com/wine/white-wine/sauvignon-blanc/courtney-benham-sauvignon-blanc-terroir-selection/p/235912750"
 )
 w28 = Wine.create(
-    name: "Far Niente Chardonnay, 2019",
-    description:"The Tasting Panel-Napa Valley, CA- Coombsville vineyards protected by the hills east of downtown Napa are home to this Chardonnay. They are as cool as Carneros but less windy, with deeper soils of gravel and volcanic ash, and their influence on this dignified white shows in its complex persona...",
-    price: 59.99,
-    highly_rated: true,
+    name: "Verada Chardonnay Tri-County",
+    description:"This elegant tri-county Chardonnay presents flavors of honeycrisp apple, bright citrus and creamy butter. It's medium-bodied and pairs well with chicken dishes, creamy cheeses and lemon salmon. Vegan",
+    price: 17.99,
+    highly_rated: false,
     country_state: "California",
     wine_type: "White Wine",
     varietal: "Chardonnay",
     abv: 13.5,
     ml: 750,
-    taste: "Citrus, Hazelnut, Oak",
-    body: "Full-bodied",
-    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/hdf/h74/12343402889246.png",
-    url: "https://www.totalwine.com/wine/white-wine/chardonnay/far-niente-chardonnay/p/230750?s=606&igrules=true"
+    taste: "Lemon, Honeysuckle",
+    body: "Light-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/ha8/h24/14978700181534.png",
+    url: "https://www.totalwine.com/wine/white-wine/chardonnay/verada-chardonnay-tricounty/p/236231750?s=606&igrules=true"
 )
 w29 = Wine.create(
     name: "Shafer Red Shoulder Ranch Chardonnay, 2019",
-    description:"Jeb Dunnuck-Carneros, California - ...Buttered lemons, tangerines, green almond, and toasty notes all make an appearance, and it's incredibly textured, with nicely integrated acidity and one heck of a finish. This powerful Chardonnay is going to impress right out of the gate.",
+    description:"Buttered lemons, tangerines, green almond, and toasty notes all make an appearance, and it's incredibly textured, with nicely integrated acidity and one heck of a finish. This powerful Chardonnay is going to impress right out of the gate.",
     price: 59.97,
     highly_rated: true,
     country_state: "California",
@@ -538,7 +543,7 @@ w29 = Wine.create(
 )
 w30 = Wine.create(
     name: "Lloyd Chardonnay Carneros",
-    description:"Carneros , CA - Winemaker Rob Lloyd makes the style of wine he likes to drink -- firm, intense and concentrated, with flavors of ripe apple, juicy melon, honeysuckle, pineapple and vanilla. A rich mouthfeel balanced with just enough acidity",
+    description:"Winemaker Rob Lloyd makes the style of wine he likes to drink -- firm, intense and concentrated, with flavors of ripe apple, juicy melon, honeysuckle, pineapple and vanilla. A rich mouthfeel balanced with just enough acidity",
     price: 44.99,
     highly_rated: false,
     country_state: "California",
@@ -553,7 +558,7 @@ w30 = Wine.create(
 )
 w31 = Wine.create(
     name: "Bartenura Moscato",
-    description:"Italy- Crisp and refreshing. Semi-sweet with lingering pear, tangerine, nectar and melon flavors rounding out the finish. Perfect with dessert or fresh fruit, or for sipping poolside.",
+    description:"Crisp and refreshing. Semi-sweet with lingering pear, tangerine, nectar and melon flavors rounding out the finish. Perfect with dessert or fresh fruit, or for sipping poolside.",
     price: 12.49,
     highly_rated: false,
     country_state: "Italy",
@@ -568,7 +573,7 @@ w31 = Wine.create(
 )
 w32 = Wine.create(
     name: "Kitchen Sink White Reserver",
-    description:"California- A unique blend of Viognier, Muscat, Semillon, and Sauvignon Blanc. Aromas of peach, rose and candied apple lead to notes of peach and lychee that carry through to mid palate. A soft middle is followed with slight acidity on the finish, with fruit notes that carry to the end.",
+    description:"A unique blend of Viognier, Muscat, Semillon, and Sauvignon Blanc. Aromas of peach, rose and candied apple lead to notes of peach and lychee that carry through to mid palate. A soft middle is followed with slight acidity on the finish, with fruit notes that carry to the end.",
     price: 14.99,
     highly_rated: false,
     country_state: "California",
@@ -583,7 +588,7 @@ w32 = Wine.create(
 )
 w33 = Wine.create(
     name: "Cakebread Chardonnay Reserve, 2019",
-    description:"Carneros, Napa, CA- Aromas of sweet butter and oak spice, followed by waves of fresh, spiced-apple, pear and melon fruit scents. Revealing a rich, mouth-filling texture with ripe, fleshy, appley flavors balanced by bright acidity and a refreshing minerality. Long, savory, oaky finish.",
+    description:"Aromas of sweet butter and oak spice, followed by waves of fresh, spiced-apple, pear and melon fruit scents. Revealing a rich, mouth-filling texture with ripe, fleshy, appley flavors balanced by bright acidity and a refreshing minerality. Long, savory, oaky finish.",
     price: 69.99,
     highly_rated: false,
     country_state: "California",
@@ -673,7 +678,7 @@ w38 = Wine.create(
 )
 w39 = Wine.create(
     name: "Sweet Bitch Bubbly Peach Moscato",
-    description:"Beverage Dynamics-Piedmont, Italy - A fruit forward fizzy red that is packed with fresh raspberries, bright cherries, backed plums, and juicy strawberry notes. Pleasant low alcohol and cool service temperature maks this light, fresh wine enjoyable and easy drinking.",
+    description:"A fruit forward fizzy red that is packed with fresh raspberries, bright cherries, backed plums, and juicy strawberry notes. Pleasant low alcohol and cool service temperature maks this light, fresh wine enjoyable and easy drinking.",
     price: 9.99,
     highly_rated: false,
     country_state: "Chile",
@@ -688,7 +693,7 @@ w39 = Wine.create(
 )
 w40 = Wine.create(
     name: "Dom Renaissance Rully Raclots Premier Cru Chardonnay White Burgundy",
-    description:"Rully, Burgundy, France- This aromatic wine has notes of stone fruit with white flower overtones and toast hints. This is the perfect wine to pair with river and sea fish, and hard cheeses.",
+    description:"This aromatic wine has notes of stone fruit with white flower overtones and toast hints. This is the perfect wine to pair with river and sea fish, and hard cheeses.",
     price: 49.99,
     highly_rated: false,
     country_state: "France",
@@ -732,19 +737,19 @@ w42 = Wine.create(
     url: "https://www.totalwine.com/wine/white-wine/bordeaux-blend/chateau-doisy-daene-blanc/p/130318750?s=606&igrules=true"
 )
 w43 = Wine.create(
-    name: "Far Niente Chardonnay, 2019",
-    description:"Coombsville vineyards protected by the hills east of downtown Napa are home to this Chardonnay. They are as cool as Carneros but less windy, with deeper soils of gravel and volcanic ash, and their influence on this dignified white shows in its complex persona...",
-    price: 59.99,
+    name: "John Legend Signature Series By LVE Chardonnay, 2020",
+    description:"Bartlett pear and a hint of bright Granny Smith notes give this Sonoma County wine life and zesty drive. Light vanilla flavors provide the fruit with direction and balance, but stay subtle and keep the wine's complexity and smoothness.",
+    price: 14.99,
     highly_rated: true,
     country_state: "California",
     wine_type: "White Wine",
     varietal: "Chardonnay",
-    abv: 14.3,
+    abv: 14.5,
     ml: 750,
-    taste: "Citrus, hazelnut, oak",
+    taste: "Honeysuckle, Vanilla",
     body: "Full-bodied",
-    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/hdf/h74/12343402889246.png",
-    url: "https://www.totalwine.com/wine/white-wine/chardonnay/far-niente-chardonnay/p/230750?s=606&igrules=true"
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/hf5/h7c/14820016488478.png",
+    url: "https://www.totalwine.com/wine/white-wine/chardonnay/john-legend-signature-series-by-lve-chardonnay/p/235790750?s=606&igrules=true"
 )
 w44 = Wine.create(
     name: "Frank Family Chardonnay Napa",
@@ -778,7 +783,7 @@ w45 = Wine.create(
 )
 w46 = Wine.create(
     name: "Kongsgaard Chardonnay, 2016",
-    description:"the 2016 Chardonnay opens with decadent nectarine, spiced pears and apple pie scents with hints of lemon tart, orange blossoms and candied ginger plus a waft of marzipan. Full-bodied and rich, with a lovely satiny texture",
+    description:"The 2016 Chardonnay opens with decadent nectarine, spiced pears and apple pie scents with hints of lemon tart, orange blossoms and candied ginger plus a waft of marzipan. Full-bodied and rich, with a lovely satiny texture",
     price: 114.97,
     highly_rated: true,
     country_state: "California",
@@ -793,7 +798,7 @@ w46 = Wine.create(
 )
 w47 = Wine.create(
     name: "Domaine Julie Belland Criots Batard Montrachet Grand Cru",
-    description:"Cote de Beaune, Burgundy, France - Acacia flower with toast notes. Complex honey, passion fruit and toasted almonds flavors. Will pair great with foie gras, lobster, small red mullet, and pike.",
+    description:"Acacia flower with toast notes. Complex honey, passion fruit and toasted almonds flavors. Will pair great with foie gras, lobster, small red mullet, and pike.",
     price: 429.99,
     highly_rated: false,
     country_state: "France",
@@ -900,7 +905,7 @@ w53 = Wine.create(
 )
 w54 = Wine.create(
     name: "Perrier Jouet Belle Epoque, 2013",
-    description:"...a bright spine of acidity easily transitioning the focus to flavors of poached apricot, lemon curd, toasted brioche and ground ginger, then transitioning again on the finish where the finely creamy mousse and subtle hint of smoky mineral hold sway...",
+    description:"A bright spine of acidity easily transitioning the focus to flavors of poached apricot, lemon curd, toasted brioche and ground ginger, then transitioning again on the finish where the finely creamy mousse and subtle hint of smoky mineral hold sway...",
     price: 189.99,
     highly_rated: true,
     country_state: "France",
@@ -915,7 +920,7 @@ w54 = Wine.create(
 )
 w55 = Wine.create(
     name: "Mailly Exception Blanche, 2012",
-    description:"Jeb Dunnuck-Carneros, California - ...Buttered lemons, tangerines, green almond, and toasty notes all make an appearance, and it's incredibly textured, with nicely integrated acidity and one heck of a finish. This powerful Chardonnay is going to impress right out of the gate.",
+    description:"A Chardonnay Champagne from the Cote des Blancs, this is tenderly textured, balancing minerality with ripe apple and citrus flavors that are approaching maturity.",
     price: 59.97,
     highly_rated: true,
     country_state: "France",
@@ -968,6 +973,7 @@ w58 = Wine.create(
     varietal: "Champagne",
     abv: 12,
     ml: 750,
+    taste:"Strawberry, Apple", 
     body: "Medium-bodied",
     image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/ha9/hc6/13376264929310.png",
     url: "https://www.totalwine.com/wine/champagne-sparkling-wine/champagne/chanoine-heritage-cuvee-rose/p/214171750?s=606&igrules=true"
@@ -1123,7 +1129,7 @@ w68 = Wine.create(
 )
 w69 = Wine.create(
     name: "Banfi Rosa Regale",
-    description:" has a delicate bouquet of rose petals and offers sensuous flavors of fresh raspberries and sweet strawberries. Its effervescence is softer than that of champagne, yet it yields a persistent and delicate pink froth.",
+    description:"Has a delicate bouquet of rose petals and offers sensuous flavors of fresh raspberries and sweet strawberries. Its effervescence is softer than that of champagne, yet it yields a persistent and delicate pink froth.",
     price: 15.49,
     highly_rated: false,
     country_state: "Italy",
@@ -1241,11 +1247,749 @@ w76 = Wine.create(
     image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/hd6/h25/12673394901022.png",
     url: "https://www.totalwine.com/wine/rose-blush-wine/rose-blend/berrycream-rose/p/224028750?s=606&igrules=true"
 )
- puts "🥂 Drink up!"
 
- puts "🥗 Adding foods to wines..."
- WineFood.create!(wine_id: wine.id, food_id: food.id)
+ w77 = Wine.create(
+    name: "Donnachiara Taurasi, 2017",
+    description: "A very polished, intense aglianico with blackberry, blueberry, rose-stem and wet-earth aromas and flavors. What really impresses is the polished nature of the tannins that caress and massage the palate. Love the finish, too. A special wine.",
+    price: 37.99,
+    highly_rated: true,
+    country_state: "Italy",
+    wine_type: "Red wine",
+    varietal: "Aglianico",
+    abv: 13.5,
+    ml: 750,
+    taste: "Blackberry, chocolate",
+    body: "full-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h9e/ha1/11524016603166.png",
+    url: "https://www.totalwine.com/wine/red-wine/aglianico/donnachiara-taurasi/p/129852750?s=606&igrules=true"
+)
+w78 = Wine.create(
+    name: "Vecchia Cantina Chianti Riserva DOCG, 2016",
+    description:"Dried-cherry and wet-earth aromas and flavors, as well as dried flowers. Medium to full body. Round, velvety tannins with chocolate and cedar aftertaste. Delicious at the finish.",
+    price: 14.99,
+    highly_rated: true,
+    country_state: "Italy",
+    wine_type: "Red Wine",
+    varietal: "Sangiovese",
+    abv: 13.5,
+    ml: 750,
+    taste: "Black Raspberry, Blackberry, Spice",
+    body: "full-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h8a/hf4/15986502795294.png",
+    url: "https://www.totalwine.com/wine/red-wine/sangiovese/vecchia-cantina-chianti-riserva-docg/p/219510750?s=606&igrules=true"
+)
+w79 = Wine.create(
+    name: "Castello Paneretta Chianti Classico Riserva, 2017",
+    description:"Dried herbs, dried flowers, marzipan and cherry with peppery aromas. Juicy on the palate with summer fruit and elegant oak.",
+    price: 34.99,
+    highly_rated: true,
+    country_state: "Italy",
+    wine_type: "Red Wine",
+    varietal: "Sangiovese",
+    abv: 13.5,
+    ml: 750,
+    taste: "Cherry, Spice",
+    body: "medium-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/hba/h97/8812361351198.png",
+    url: "https://www.totalwine.com/wine/red-wine/sangiovese/castello-paneretta-chianti-classico-riserva/p/113630750?s=606&igrules=true"
+)
+w80 = Wine.create(
+    name: "Tenuta Di Renieri Chianti Classico, 2019",
+    description:"A fresh nose of redcurrants, cherries, floral and orange zest. It's medium-bodied with creamy tannins. Fine and pretty with lively acidity. Delicious.",
+    price: 19.99,
+    highly_rated: true,
+    country_state: "Italy",
+    wine_type: "Red Wine",
+    varietal: "Sangiovese",
+    abv: 14,
+    ml: 750,
+    taste: "Cherry, Spice",
+    body: "Medium-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/hde/hf7/15986500206622.png",
+    url: "https://www.totalwine.com/wine/red-wine/sangiovese/tenuta-di-renieri-chianti-classico/p/113709750?s=606&igrules=true"
+)
+w81 = Wine.create(
+    name: "Bellini Chianti Rufina Riserva, 2017",
+    description:"A juicy, fruity red with tile, black-cherry and raspberry character. Medium body, firm and creamy tannins and a bright finish."" Great with pizza or pastas with red sauce",
+    price: 17.99,
+    highly_rated: true,
+    country_state: "Italy",
+    wine_type: "Red Wine",
+    varietal: "Sangiovese",
+    abv: 12.5,
+    ml: 750,
+    taste: "Berry, Tobacco",
+    body: "Medium-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/hfe/h27/11484047573022.png",
+    url: "https://www.totalwine.com/wine/red-wine/sangiovese/bellini-chianti-rufina-riserva/p/38361750?s=606&igrules=true"
+)
+w82 = Wine.create(
+    name: "Amici Cabernet Sauvignon Napa, 2019",
+    description:"Deep garnet-purple in color, it charges out of the gate with loads of blueberry preserves & stewed black plums notes on the nose with faint suggestions of redcurrant jelly and rose hip tea plus a waft of wild sage. Full-bodied & jam-packed with ripe black & blue fruit.",
+    price: 49.99,
+    highly_rated: true,
+    country_state: "California",
+    wine_type: "Red Wine",
+    varietal: "Cabernet Sauvignon",
+    abv: 13.4,
+    ml: 750,
+    taste: "Blackberry, Vanilla, Spice",
+    body: "Full-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/hea/h69/15078178816030.png",
+    url: "https://www.totalwine.com/wine/red-wine/cabernet-sauvignon/amici-cabernet-sauvignon-napa/p/20095750?s=606&igrules=true"
+)
+w83 = Wine.create(
+    name: "Palliser Estate Sauvignon Blanc",
+    description:"This fresh Sauvignon Blanc has an elegant and finely concentrated style. Tropical fruit and herb flavors are intermixed with a nose that boasts aromas of passionfruit. Hints of minerality and citrus make this wine an exceptional pair with a seafood dish.",
+    price: 22.99,
+    highly_rated: false,
+    country_state: "New Zealand",
+    wine_type: "White Wine",
+    varietal: "Sauvignon Blanc",
+    abv: 13.7,
+    ml: 750,
+    taste: "Passionfruit, Tropical, Herb",
+    body: "Medium-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h40/h53/10791452311582.png",
+    url: "https://www.totalwine.com/wine/white-wine/sauvignon-blanc/palliser-estate-sauvignon-blanc/p/178757750?s=606&igrules=true"
+)
+w84 = Wine.create(
+    name: "Pagodes De Cos St Estephe, 2016",
+    description:"Opens with notions of warm cassis, black cherries and smoked meats giving way to scents of charcoal, underbrush and cloves plus a waft of new leather.",
+    price: 74.99,
+    highly_rated: true,
+    country_state: "France",
+    wine_type: "Red Wine",
+    varietal: "Bordeaux Blend",
+    abv: 14,
+    ml: 750,
+    taste: "Red fruit, leather",
+    body: "Full-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/hf5/h40/15280752230430.png",
+    url: "https://www.totalwine.com/wine/red-wine/bordeaux-blend/pagodes-de-cos-st-estephe/p/1002116750?s=606&igrules=true"
+)
+w85 = Wine.create(
+    name: "Chateau Cantenac Brown Margaux, 2018",
+    description:"This is a rich wine, full of generous black fruits and ripe tannins that give it both a powerful yet stylish nature. Its weight comes from the fine black fruit flavor, with fine acidity to the cut fruitiness..",
+    price: 89.99,
+    highly_rated: true,
+    country_state: "France",
+    wine_type: "Red Wine",
+    varietal: "Bordeaux Blend",
+    abv: 13,
+    ml: 750,
+    taste: "Raspberry, Blackberry, Oak",
+    body: "Full-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h51/h49/14938343374878.png",
+    url: "https://www.totalwine.com/wine/red-wine/bordeaux-blend/chateau-cantenac-brown-margaux/p/24518750?s=606&igrules=true"
+)
+w86 = Wine.create(
+    name: "Far Niente Cabernet Sauvignon Napa, 2017",
+    description:"The heart of this wine comes from the Martin Stelling Vineyard around the producer's property in Oakville and it contains small amounts of Petit Verdot and Malbec. Smooth edges of tannin and oak melt away on the succulent palate, allowing layers of plum.",
+    price: 139.99,
+    highly_rated: true,
+    country_state: "California",
+    wine_type: "Red Wine",
+    varietal: "Cabernet Sauvignon",
+    abv: 14.5,
+    ml: 750,
+    taste: "Oak, Black fruit",
+    body: "medium-bodied",
+    image: "https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/h17/h0e/11835381973022.png",
+    url: "https://www.totalwine.com/wine/red-wine/cabernet-sauvignon/far-niente-cabernet-sauvignon-napa/p/220445752?s=606&igrules=true"
+)
+w87 = Wine.create(
+    name: "Cakebread Cabernet Sauvignon, 2019",
+    description:"Freelance photographer Jack Cakebread founded this winery in 1973 and it has been a steady performer ever since. Boasting enticing aromas of ripe black fruits and dark chocolate, with lush, concentrated, blackberry, black cherry and smoky oak flavors. Finishes smooth.",
+    price: 89.99,
+    highly_rated: false,
+    country_state: "California",
+    wine_type: "Red Wine",
+    varietal: "Cabernet Sauvignon",
+    abv: 11,
+    ml: 750,
+    taste: "Cassis, Berry, Chocolate",
+    body: "Full-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h16/hf1/12291759210526.png",
+    url: "https://www.totalwine.com/wine/red-wine/cabernet-sauvignon/cakebread-cabernet-sauvignon/p/2341750?s=606&igrules=true"
+)
+w88 = Wine.create(
+    name: "Allegrini Amarone Della Valpolicella Classico, 2016",
+    description:"Ripe plum, blue flower and spice aromas lift out of the glass in this full-bodied red. The smooth, concentrated palate boasts a weightless elegance, delivering blackberry compote, ripe Morello cherry, licorice and baking spice framed in enveloping, velvety tannins.",
+    price: 84.99,
+    highly_rated: true,
+    country_state: "Italy",
+    wine_type: "Red Wine",
+    varietal: "Corvina",
+    abv: 12.5,
+    ml: 750,
+    taste: "Cherry Chocolate",
+    body: "full-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h2f/he7/12291776970782.png",
+    url: "https://www.totalwine.com/wine/red-wine/corvina/allegrini-amarone-della-valpolicella-classico/p/81936750?s=606&igrules=true"
+)
+w89 = Wine.create(
+    name: "Orin Swift Cabernet Papillon, 2018",
+    description:"Springs from the glass with plum preserves, baked blackcurrants and black mulberries with touches of menthol, tobacco leaf and pencil lead. Full-bodied, the palate has a firm texture of ripe, grainy tannins with a lively line and a long earthy finish.",
+    price: 179.99,
+    highly_rated: true,
+    country_state: "California",
+    wine_type: "Red Wine",
+    varietal: "Cabernet Sauvignon",
+    abv: 5.5,
+    ml: 750,
+    taste: "Kirsch, Black Currant, Blackberry",
+    body: "Full-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h6e/h55/10215920631838.png",
+    url: "https://www.totalwine.com/wine/red-wine/cabernet-sauvignon/orin-swift-cabernet-papillon/p/105965015?s=606&igrules=true"
+)
+w90 = Wine.create(
+    name: "Chateau Mouton Rothschild Pauillac, 2009",
+    description:"With a ton of ripe blackcurrant and some bitter chocolate this is a rich and rather opulent wine that still retains a delightful freshness and has a long, positively dry finish.",
+    price: 1199.97,
+    highly_rated: true,
+    country_state: "France",
+    wine_type: "Red Wine",
+    varietal: "Bordeaux Blend",
+    abv: 13,
+    ml: 750,
+    taste: "Vanilla, Leather",
+    body: "Full-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h01/ha3/12003175661598.png",
+    url: "https://www.totalwine.com/wine/red-wine/bordeaux-blend/chateau-mouton-rothschild-pauillac/p/31009750?s=606&igrules=true"
+)
+w91 = Wine.create(
+    name: "Maison Denuziere Cote Rotie Les Hauts Lieux, 2017'",
+    description:"This deep purple-colored beauty offers a classic perfume of raspberries, spring flowers, violets, and sappy herbs. With beautiful purity of fruit, no hard edges, and good freshness.",
+    price: 72.99,
+    highly_rated: true,
+    country_state: "France",
+    wine_type: "Red Wine",
+    varietal: "Rhone Blend",
+    abv: 13,
+    ml: 750,
+    taste: "Black Fruit, Cassis, Pepper",
+    body: "full-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/ha9/h4b/10220247744542.png",
+    url: "https://www.totalwine.com/wine/red-wine/rhone-blend/maison-denuziere-cote-rotie-les-hauts-lieux/p/172956750?s=606&igrules=true"
+)
+w92 = Wine.create(
+    name: "Pommery Cuvee Louise",
+    description:"Pommery's top cuvee from Grand Cru vineyards is world renowned for quality and prestige. A racy, classy blend, featuring soaring aromatics and flavors of flowers, nuts and pears. Elegant, silky textured and complex, save this outstanding bottle for a special occasion.",
+    price: 199.99,
+    highly_rated: false,
+    country_state: "France",
+    wine_type: "Champagne & Sparkling Wine",
+    varietal: "Champagne",
+    abv: 12.5,
+    ml: 750,
+    taste: "Citrus, Fig, Biscuit",
+    body: "Medium-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h0f/ha0/15350899179550.png",
+    url: "https://www.totalwine.com/wine/champagne-sparkling-wine/champagne/brut/pommery-cuvee-louise/p/27095750?s=606&igrules=true"
+)
+w93 = Wine.create(
+    name: "Drappier Grande Sendree, 2010",
+    description:"A quietly elegant Champagne, with a lovely soft, laciness to texture, and a minerally underpinning of smoke and saline accents. It displays a creamy mesh of crushed black cherry, grilled nut, kumquat and dried apricot and a refine, subtle finish.",
+    price: 144.99,
+    highly_rated: true,
+    country_state: "France",
+    wine_type: "Champagne & Sparkling wine",
+    varietal: "Champagne",
+    abv: 13.5,
+    ml: 750,
+    taste: "Honey, Butter, Almond",
+    body: "Medium-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h91/hc2/14876570386462.png",
+    url: "https://www.totalwine.com/wine/champagne-sparkling-wine/champagne/brut/drappier-grande-sendree/p/240751750?s=606&igrules=true"
+)
+w94 = Wine.create(
+    name: "Pio Cesare Barbaresco, 2015",
+    description:"A dense and layered red with plums, dried orange and lemon peel and a long and flavorful finish. Beautiful. Such impressive layers and a fantastic finish. Very exciting. Love the length.",
+    price: 89.99,
+    highly_rated: true,
+    country_state: "Italy",
+    wine_type: "Red Wine",
+    varietal: "Nebbiolo",
+    abv: 14.5,
+    ml: 750,
+    taste: "Berry, Violet, Vanilla",
+    body: "Full-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h45/h4d/14261364031518.png",
+    url: "https://www.totalwine.com/wine/red-wine/nebbiolo/pio-cesare-barbaresco/p/213785750?s=606&igrules=true"
+)
+w95 = Wine.create(
+    name: "Moone Tsai Chardonnay Napa, 2018",
+    description:"A richer, opulent style of Chardonnay, the 2018 Chardonnay Bald Mountain has lots of white currant, white peach, toasted almond, and white flower-like aromas and flavors. This is a rich, powerful, yet beautifully balanced, layered Chardonnay with loads to love.",
+    price: 85.99,
+    highly_rated: true,
+    country_state: "California",
+    wine_type: "White Wine",
+    varietal: "Chardonnay",
+    abv: 14.7,
+    ml: 750,
+    taste: "Pear, Caramel",
+    body: "Medium-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h78/hf1/9025721860126.png",
+    url: "https://www.totalwine.com/wine/white-wine/chardonnay/moone-tsai-chardonnay-napa/p/117944750?s=606&igrules=true"
+)
+w96 = Wine.create(
+    name: "Louis Jadot Meursault Narvaux , 2019",
+    description:"A really delightful Meursault! Very pure, ripe-pear nose with just a hint of exotic fruit. All the generosity of this appellation, combined with good concentration and vibrant acidity, which make this invigorating at the long, very straight finish.",
+    price: 94.99,
+    highly_rated: true,
+    country_state: "France",
+    wine_type: "White Wine",
+    varietal: "Chardonnay",
+    abv: 13,
+    ml: 750,
+    taste: "Pear, Citrus, White Flower",
+    body: "Medium-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h27/h21/15909954060318.png",
+    url: "https://www.totalwine.com/wine/white-wine/chardonnay/louis-jadot-meursault-narvaux/p/239485750?s=606&igrules=true"
+)
+w97 = Wine.create(
+    name: "Wayfarer Chardonnay Wayfarer Vineyard Sonoma Coast, 2019",
+    description:"A beautiful, Burgundian nose of orchard fruits, white flowers, chalky minerality, and honeysuckle emerge from the 2019 Chardonnay Wayfarer Vineyard, a riveting, pure, flawlessly balanced Chardonnay that shines on all accounts. Picking up a kiss of green almond.",
+    price: 79.99,
+    highly_rated: true,
+    country_state: "California",
+    wine_type: "White Wine",
+    varietal: "Chardonnay",
+    abv: 14.5,
+    ml: 750,
+    taste: "Pineapple, orange",
+    body: "light-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h03/hda/12244711768094.png",
+    url: "https://www.totalwine.com/wine/white-wine/chardonnay/wayfarer-chardonnay-wayfarer-vineyard-sonoma-coast/p/142230750?s=606&igrules=true"
+)
+w98 = Wine.create(
+    name: "Maison Denuziere Condrieu Aphrodite, 2016",
+    description:"Creamy swirls of vanilla-orange ice cream and honeydew melon dominate this unctuous but pertly balanced Viognier. It's silky and richly concentrated but maintains an elegant, sunny appeal. The finish is long and tangerine scented.",
+    price: 79.99,
+    highly_rated: true,
+    country_state: "France",
+    wine_type: "White Wine",
+    varietal: "Viognier",
+    abv: 13,
+    ml: 750,
+    taste: "Peach, Tangerine, Honeysuckle",
+    body: "Medium-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h0e/h46/10220247875614.png",
+    url: "https://www.totalwine.com/wine/white-wine/viognier/maison-denuziere-condrieu-aphrodite/p/172958750?s=606&igrules=true"
+)
+w99 = Wine.create(
+    name: "Roosevelt Riding A Moose Cabernet Sauvignon",
+    description:"Rich, complex on the palate with layers of dark fruit and spices. Very soft and velvety tannins mouthfeel and aftertaste of coconut, vanilla, dried fruit with a very long finish and light smoky notes.",
+    price: 24.99,
+    highly_rated: false,
+    country_state: "Italy",
+    wine_type: "Red Wine",
+    varietal: "Cabernet Sauvignon",
+    abv: 16,
+    ml: 750,
+    taste: "Dark Berry, Vanilla, Almond",
+    body: "Full-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/he1/hdc/15280781492254.png",
+    url: "https://www.totalwine.com/wine/red-wine/cabernet-sauvignon/roosevelt-riding-a-moose-cabernet-sauvignon/p/234962750?s=606&igrules=true"
+)
+w100 = Wine.create(
+    name: "Roscato Rosso Dolce",
+    description:"An irresistible, delicately sweet, gently fizzy red wine from the northern Italian region of Lombardy. Makes a wonderful aperitif and is also incredibly food-friendly.",
+    price: 9.47,
+    highly_rated: false,
+    country_state: "Italy",
+    wine_type: "Champagne & Sparkling Wine",
+    varietal: "Sparkling Red Wine",
+    abv: 10,
+    ml: 750,
+    taste: "Cherry, Raspberry, Blackberry",
+    body: "light-bodied",
+    image: "https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/hd5/h0b/12151243735070.png",
+    url: "https://www.totalwine.com/wine/champagne-sparkling-wine/sparkling-red-wine/roscato-rosso-dolce/p/120178750?s=606&igrules=true"
+)
 
+
+puts "🥗 Adding foods to wines..."
+WineFood.create(Wine_id: 1, food_id: 4)
+WineFood.create(Wine_id: 1, food_id: 5)
+WineFood.create(Wine_id: 2, food_id: 4)
+WineFood.create(Wine_id: 2, food_id: 8)
+WineFood.create(Wine_id: 2, food_id: 2)
+WineFood.create(Wine_id: 2, food_id: 5)
+WineFood.create(Wine_id: 3, food_id: 4)
+WineFood.create(Wine_id: 3, food_id: 8)
+WineFood.create(Wine_id: 3, food_id: 6)
+WineFood.create(Wine_id: 3, food_id: 2)
+WineFood.create(Wine_id: 4, food_id: 4)
+WineFood.create(Wine_id: 4, food_id: 8)
+WineFood.create(Wine_id: 4, food_id: 6)
+WineFood.create(Wine_id: 5, food_id: 4)
+WineFood.create(Wine_id: 5, food_id: 6)
+WineFood.create(Wine_id: 5, food_id: 5)
+WineFood.create(Wine_id: 5, food_id: 2)
+WineFood.create(Wine_id: 6, food_id: 4)
+WineFood.create(Wine_id: 6, food_id: 8)
+WineFood.create(Wine_id: 6, food_id: 5)
+WineFood.create(Wine_id: 6, food_id: 7)
+WineFood.create(Wine_id: 6, food_id: 13)
+WineFood.create(Wine_id: 7, food_id: 4)
+WineFood.create(Wine_id: 7, food_id: 8)
+WineFood.create(Wine_id: 7, food_id: 5)
+WineFood.create(Wine_id: 7, food_id: 7)
+WineFood.create(Wine_id: 7, food_id: 13)
+WineFood.create(Wine_id: 8, food_id: 4)
+WineFood.create(Wine_id: 8, food_id: 8)
+WineFood.create(Wine_id: 8, food_id: 5)
+WineFood.create(Wine_id: 8, food_id: 7)
+WineFood.create(Wine_id: 8, food_id: 13)
+WineFood.create(Wine_id: 9, food_id: 4)
+WineFood.create(Wine_id: 9, food_id: 8)
+WineFood.create(Wine_id: 9, food_id: 2)
+WineFood.create(Wine_id: 10, food_id: 4)
+WineFood.create(Wine_id: 10, food_id: 12)
+WineFood.create(Wine_id: 10, food_id: 8)
+WineFood.create(Wine_id: 10, food_id: 2)
+WineFood.create(Wine_id: 11, food_id: 4)
+WineFood.create(Wine_id: 11, food_id: 8)
+WineFood.create(Wine_id: 11, food_id: 5)
+WineFood.create(Wine_id: 11, food_id: 2)
+WineFood.create(Wine_id: 12, food_id: 4)
+WineFood.create(Wine_id: 12, food_id: 8)
+WineFood.create(Wine_id: 12, food_id: 5)
+WineFood.create(Wine_id: 12, food_id: 2)
+WineFood.create(Wine_id: 13, food_id: 4)
+WineFood.create(Wine_id: 13, food_id: 6)
+WineFood.create(Wine_id: 13, food_id: 5)
+WineFood.create(Wine_id: 13, food_id: 2)
+WineFood.create(Wine_id: 14, food_id: 2)
+WineFood.create(Wine_id: 14, food_id: 4)
+WineFood.create(Wine_id: 14, food_id: 1)
+WineFood.create(Wine_id: 15, food_id: 4)
+WineFood.create(Wine_id: 15, food_id: 8)
+WineFood.create(Wine_id: 15, food_id: 5)
+WineFood.create(Wine_id: 15, food_id: 2)
+WineFood.create(Wine_id: 16, food_id: 4)
+WineFood.create(Wine_id: 16, food_id: 8)
+WineFood.create(Wine_id: 16, food_id: 5)
+WineFood.create(Wine_id: 16, food_id: 2)
+WineFood.create(Wine_id: 17, food_id: 4)
+WineFood.create(Wine_id: 17, food_id: 8)
+WineFood.create(Wine_id: 17, food_id: 6)
+WineFood.create(Wine_id: 17, food_id: 2)
+WineFood.create(Wine_id: 18, food_id: 4)
+WineFood.create(Wine_id: 18, food_id: 8)
+WineFood.create(Wine_id: 18, food_id: 5)
+WineFood.create(Wine_id: 18, food_id: 2)
+WineFood.create(Wine_id: 19, food_id: 14)
+WineFood.create(Wine_id: 19, food_id: 7)
+WineFood.create(Wine_id: 20, food_id: 4)
+WineFood.create(Wine_id: 20, food_id: 8)
+WineFood.create(Wine_id: 20, food_id: 5)
+WineFood.create(Wine_id: 20, food_id: 1)
+WineFood.create(Wine_id: 20, food_id: 2)
+WineFood.create(Wine_id: 21, food_id: 4)
+WineFood.create(Wine_id: 21, food_id: 8)
+WineFood.create(Wine_id: 21, food_id: 6)
+WineFood.create(Wine_id: 21, food_id: 2)
+WineFood.create(Wine_id: 22, food_id: 2)
+WineFood.create(Wine_id: 22, food_id: 1)
+WineFood.create(Wine_id: 22, food_id: 8)
+WineFood.create(Wine_id: 23, food_id: 4)
+WineFood.create(Wine_id: 23, food_id: 6)
+WineFood.create(Wine_id: 23, food_id: 5)
+WineFood.create(Wine_id: 23, food_id: 8)
+WineFood.create(Wine_id: 24, food_id: 4)
+WineFood.create(Wine_id: 24, food_id: 8)
+WineFood.create(Wine_id: 24, food_id: 5)
+WineFood.create(Wine_id: 24, food_id: 2)
+WineFood.create(Wine_id: 25, food_id: 4)
+WineFood.create(Wine_id: 25, food_id: 12)
+WineFood.create(Wine_id: 25, food_id: 6)
+WineFood.create(Wine_id: 25, food_id: 2)
+WineFood.create(Wine_id: 26, food_id: 2)
+WineFood.create(Wine_id: 26, food_id: 7)
+WineFood.create(Wine_id: 27, food_id: 11)
+WineFood.create(Wine_id: 27, food_id: 9)
+WineFood.create(Wine_id: 27, food_id: 2)
+WineFood.create(Wine_id: 28, food_id: 1)
+WineFood.create(Wine_id: 28, food_id: 13)
+WineFood.create(Wine_id: 28, food_id: 9)
+WineFood.create(Wine_id: 28, food_id: 2)
+WineFood.create(Wine_id: 29, food_id: 1)
+WineFood.create(Wine_id: 29, food_id: 13)
+WineFood.create(Wine_id: 29, food_id: 9)
+WineFood.create(Wine_id: 29, food_id: 2)
+WineFood.create(Wine_id: 30, food_id: 1)
+WineFood.create(Wine_id: 30, food_id: 13)
+WineFood.create(Wine_id: 30, food_id: 9)
+WineFood.create(Wine_id: 30, food_id: 2)
+WineFood.create(Wine_id: 31, food_id: 12)
+WineFood.create(Wine_id: 31, food_id: 13)
+WineFood.create(Wine_id: 31, food_id: 7)
+WineFood.create(Wine_id: 31, food_id: 3)
+WineFood.create(Wine_id: 32, food_id: 12)
+WineFood.create(Wine_id: 32, food_id: 1)
+WineFood.create(Wine_id: 32, food_id: 13)
+WineFood.create(Wine_id: 32, food_id: 2)
+WineFood.create(Wine_id: 33, food_id: 1)
+WineFood.create(Wine_id: 33, food_id: 13)
+WineFood.create(Wine_id: 33, food_id: 9)
+WineFood.create(Wine_id: 33, food_id: 2)
+WineFood.create(Wine_id: 34, food_id: 4)
+WineFood.create(Wine_id: 34, food_id: 8)
+WineFood.create(Wine_id: 34, food_id: 5)
+WineFood.create(Wine_id: 34, food_id: 2)
+WineFood.create(Wine_id: 35, food_id: 1)
+WineFood.create(Wine_id: 35, food_id: 13)
+WineFood.create(Wine_id: 35, food_id: 15)
+WineFood.create(Wine_id: 35, food_id: 5)
+WineFood.create(Wine_id: 35, food_id: 2)
+WineFood.create(Wine_id: 36, food_id: 13)
+WineFood.create(Wine_id: 36, food_id: 9)
+WineFood.create(Wine_id: 36, food_id: 10)
+WineFood.create(Wine_id: 37, food_id: 13)
+WineFood.create(Wine_id: 37, food_id: 2)
+WineFood.create(Wine_id: 37, food_id: 7)
+WineFood.create(Wine_id: 38, food_id: 7)
+WineFood.create(Wine_id: 39, food_id: 2)
+WineFood.create(Wine_id: 40, food_id: 4)
+WineFood.create(Wine_id: 40, food_id: 8)
+WineFood.create(Wine_id: 40, food_id: 5)
+WineFood.create(Wine_id: 40, food_id: 2)
+WineFood.create(Wine_id: 41, food_id: 13)
+WineFood.create(Wine_id: 41, food_id: 9)
+WineFood.create(Wine_id: 41, food_id: 10)
+WineFood.create(Wine_id: 42, food_id: 1)
+WineFood.create(Wine_id: 42, food_id: 9)
+WineFood.create(Wine_id: 42, food_id: 2)
+WineFood.create(Wine_id: 42, food_id: 10)
+WineFood.create(Wine_id: 42, food_id: 13)
+WineFood.create(Wine_id: 43, food_id: 2)
+WineFood.create(Wine_id: 43, food_id: 13)
+WineFood.create(Wine_id: 43, food_id: 9)
+WineFood.create(Wine_id: 43, food_id: 13)
+WineFood.create(Wine_id: 44, food_id: 2)
+WineFood.create(Wine_id: 44, food_id: 13)
+WineFood.create(Wine_id: 44, food_id: 9)
+WineFood.create(Wine_id: 44, food_id: 2)
+WineFood.create(Wine_id: 45, food_id: 13)
+WineFood.create(Wine_id: 45, food_id: 9)
+WineFood.create(Wine_id: 45, food_id: 10)
+WineFood.create(Wine_id: 45, food_id: 3)
+WineFood.create(Wine_id: 46, food_id: 2)
+WineFood.create(Wine_id: 46, food_id: 13)
+WineFood.create(Wine_id: 46, food_id: 7)
+WineFood.create(Wine_id: 46, food_id: 2)
+WineFood.create(Wine_id: 47, food_id: 12)
+WineFood.create(Wine_id: 47, food_id: 13)
+WineFood.create(Wine_id: 47, food_id: 7)
+WineFood.create(Wine_id: 47, food_id: 2)
+WineFood.create(Wine_id: 48, food_id: 2)
+WineFood.create(Wine_id: 48, food_id: 13)
+WineFood.create(Wine_id: 48, food_id: 9)
+WineFood.create(Wine_id: 48, food_id: 2)
+WineFood.create(Wine_id: 49, food_id: 4)
+WineFood.create(Wine_id: 49, food_id: 8)
+WineFood.create(Wine_id: 49, food_id: 5)
+WineFood.create(Wine_id: 49, food_id: 2)
+WineFood.create(Wine_id: 50, food_id: 1)
+WineFood.create(Wine_id: 50, food_id: 13)
+WineFood.create(Wine_id: 50, food_id: 2)
+WineFood.create(Wine_id: 50, food_id: 3)
+WineFood.create(Wine_id: 51, food_id: 7)
+WineFood.create(Wine_id: 51, food_id: 11)
+WineFood.create(Wine_id: 51, food_id: 13)
+WineFood.create(Wine_id: 51, food_id: 15)
+WineFood.create(Wine_id: 52, food_id: 1)
+WineFood.create(Wine_id: 52, food_id: 13)
+WineFood.create(Wine_id: 52, food_id: 11)
+WineFood.create(Wine_id: 52, food_id: 7)
+WineFood.create(Wine_id: 53, food_id: 1)
+WineFood.create(Wine_id: 53, food_id: 13)
+WineFood.create(Wine_id: 53, food_id: 11)
+WineFood.create(Wine_id: 53, food_id: 7)
+WineFood.create(Wine_id: 54, food_id: 1)
+WineFood.create(Wine_id: 54, food_id: 13)
+WineFood.create(Wine_id: 54, food_id: 11)
+WineFood.create(Wine_id: 54, food_id: 7)
+WineFood.create(Wine_id: 55, food_id: 1)
+WineFood.create(Wine_id: 55, food_id: 13)
+WineFood.create(Wine_id: 55, food_id: 11)
+WineFood.create(Wine_id: 55, food_id: 7)
+WineFood.create(Wine_id: 56, food_id: 1)
+WineFood.create(Wine_id: 56, food_id: 13)
+WineFood.create(Wine_id: 56, food_id: 11)
+WineFood.create(Wine_id: 56, food_id: 7)
+WineFood.create(Wine_id: 57, food_id: 11)
+WineFood.create(Wine_id: 57, food_id: 10)
+WineFood.create(Wine_id: 57, food_id: 13)
+WineFood.create(Wine_id: 58, food_id: 1)
+WineFood.create(Wine_id: 58, food_id: 13)
+WineFood.create(Wine_id: 58, food_id: 11)
+WineFood.create(Wine_id: 58, food_id: 7)
+WineFood.create(Wine_id: 59, food_id: 1)
+WineFood.create(Wine_id: 59, food_id: 13)
+WineFood.create(Wine_id: 59, food_id: 11)
+WineFood.create(Wine_id: 59, food_id: 7)
+WineFood.create(Wine_id: 60, food_id: 11)
+WineFood.create(Wine_id: 60, food_id: 9)
+WineFood.create(Wine_id: 60, food_id: 10)
+WineFood.create(Wine_id: 60, food_id: 3)
+WineFood.create(Wine_id: 61, food_id: 1)
+WineFood.create(Wine_id: 61, food_id: 13)
+WineFood.create(Wine_id: 61, food_id: 11)
+WineFood.create(Wine_id: 61, food_id: 7)
+WineFood.create(Wine_id: 62, food_id: 1)
+WineFood.create(Wine_id: 62, food_id: 9)
+WineFood.create(Wine_id: 62, food_id: 10)
+WineFood.create(Wine_id: 62, food_id: 3)
+WineFood.create(Wine_id: 63, food_id: 1)
+WineFood.create(Wine_id: 63, food_id: 11)
+WineFood.create(Wine_id: 63, food_id: 13)
+WineFood.create(Wine_id: 63, food_id: 7)
+WineFood.create(Wine_id: 64, food_id: 1)
+WineFood.create(Wine_id: 64, food_id: 11)
+WineFood.create(Wine_id: 64, food_id: 13)
+WineFood.create(Wine_id: 64, food_id: 7)
+WineFood.create(Wine_id: 65, food_id: 1)
+WineFood.create(Wine_id: 65, food_id: 13)
+WineFood.create(Wine_id: 65, food_id: 11)
+WineFood.create(Wine_id: 65, food_id: 7)
+WineFood.create(Wine_id: 66, food_id: 1)
+WineFood.create(Wine_id: 66, food_id: 11)
+WineFood.create(Wine_id: 66, food_id: 13)
+WineFood.create(Wine_id: 66, food_id: 7)
+WineFood.create(Wine_id: 67, food_id: 11)
+WineFood.create(Wine_id: 67, food_id: 13)
+WineFood.create(Wine_id: 67, food_id: 10)
+WineFood.create(Wine_id: 68, food_id: 1)
+WineFood.create(Wine_id: 68, food_id: 13)
+WineFood.create(Wine_id: 68, food_id: 11)
+WineFood.create(Wine_id: 68, food_id: 7)
+WineFood.create(Wine_id: 69, food_id: 13)
+WineFood.create(Wine_id: 69, food_id: 7)
+WineFood.create(Wine_id: 69, food_id: 14)
+WineFood.create(Wine_id: 70, food_id: 1)
+WineFood.create(Wine_id: 70, food_id: 11)
+WineFood.create(Wine_id: 70, food_id: 13)
+WineFood.create(Wine_id: 70, food_id: 7)
+WineFood.create(Wine_id: 71, food_id: 11)
+WineFood.create(Wine_id: 71, food_id: 10)
+WineFood.create(Wine_id: 71, food_id: 13)
+WineFood.create(Wine_id: 72, food_id: 11)
+WineFood.create(Wine_id: 72, food_id: 10)
+WineFood.create(Wine_id: 72, food_id: 13)
+WineFood.create(Wine_id: 73, food_id: 1)
+WineFood.create(Wine_id: 73, food_id: 13)
+WineFood.create(Wine_id: 73, food_id: 11)
+WineFood.create(Wine_id: 73, food_id: 7)
+WineFood.create(Wine_id: 74, food_id: 7)
+WineFood.create(Wine_id: 74, food_id: 3)
+WineFood.create(Wine_id: 75, food_id: 13)
+WineFood.create(Wine_id: 75, food_id: 10)
+WineFood.create(Wine_id: 75, food_id: 11)
+WineFood.create(Wine_id: 75, food_id: 3)
+WineFood.create(Wine_id: 76, food_id: 11)
+WineFood.create(Wine_id: 76, food_id: 10)
+WineFood.create(Wine_id: 76, food_id: 14)
+WineFood.create(Wine_id: 76, food_id: 15)
+WineFood.create(Wine_id: 77, food_id: 4)
+WineFood.create(Wine_id: 77, food_id: 12)
+WineFood.create(Wine_id: 77, food_id: 8)
+WineFood.create(Wine_id: 78, food_id: 4)
+WineFood.create(Wine_id: 78, food_id: 6)
+WineFood.create(Wine_id: 78, food_id: 2)
+WineFood.create(Wine_id: 79, food_id: 4)
+WineFood.create(Wine_id: 79, food_id: 6)
+WineFood.create(Wine_id: 79, food_id: 2)
+WineFood.create(Wine_id: 80, food_id: 4)
+WineFood.create(Wine_id: 80, food_id: 6)
+WineFood.create(Wine_id: 80, food_id: 2)
+WineFood.create(Wine_id: 81, food_id: 4)
+WineFood.create(Wine_id: 81, food_id: 6)
+WineFood.create(Wine_id: 81, food_id: 2)
+WineFood.create(Wine_id: 82, food_id: 4)
+WineFood.create(Wine_id: 82, food_id: 8)
+WineFood.create(Wine_id: 82, food_id: 5)
+WineFood.create(Wine_id: 82, food_id: 7)
+WineFood.create(Wine_id: 82, food_id: 2)
+WineFood.create(Wine_id: 83, food_id: 8)
+WineFood.create(Wine_id: 83, food_id: 8)
+WineFood.create(Wine_id: 83, food_id: 11)
+WineFood.create(Wine_id: 84, food_id: 4)
+WineFood.create(Wine_id: 84, food_id: 8)
+WineFood.create(Wine_id: 84, food_id: 5)
+WineFood.create(Wine_id: 84, food_id: 2)
+WineFood.create(Wine_id: 85, food_id: 4)
+WineFood.create(Wine_id: 85, food_id: 8)
+WineFood.create(Wine_id: 85, food_id: 5)
+WineFood.create(Wine_id: 85, food_id: 2)
+WineFood.create(Wine_id: 86, food_id: 4)
+WineFood.create(Wine_id: 86, food_id: 8)
+WineFood.create(Wine_id: 86, food_id: 5)
+WineFood.create(Wine_id: 86, food_id: 7)
+WineFood.create(Wine_id: 86, food_id: 2)
+WineFood.create(Wine_id: 87, food_id: 4)
+WineFood.create(Wine_id: 87, food_id: 8)
+WineFood.create(Wine_id: 87, food_id: 5)
+WineFood.create(Wine_id: 87, food_id: 7)
+WineFood.create(Wine_id: 87, food_id: 2)
+WineFood.create(Wine_id: 88, food_id: 4)
+WineFood.create(Wine_id: 88, food_id: 5)
+WineFood.create(Wine_id: 88, food_id: 7)
+WineFood.create(Wine_id: 89, food_id: 4)
+WineFood.create(Wine_id: 89, food_id: 8)
+WineFood.create(Wine_id: 89, food_id: 5)
+WineFood.create(Wine_id: 89, food_id: 2)
+WineFood.create(Wine_id: 90, food_id: 4)
+WineFood.create(Wine_id: 90, food_id: 8)
+WineFood.create(Wine_id: 90, food_id: 5)
+WineFood.create(Wine_id: 90, food_id: 2)
+WineFood.create(Wine_id: 91, food_id: 4)
+WineFood.create(Wine_id: 91, food_id: 8)
+WineFood.create(Wine_id: 91, food_id: 5)
+WineFood.create(Wine_id: 91, food_id: 2)
+WineFood.create(Wine_id: 92, food_id: 1)
+WineFood.create(Wine_id: 92, food_id: 13)
+WineFood.create(Wine_id: 92, food_id: 11)
+WineFood.create(Wine_id: 92, food_id: 7)
+WineFood.create(Wine_id: 93, food_id: 1)
+WineFood.create(Wine_id: 93, food_id: 13)
+WineFood.create(Wine_id: 93, food_id: 11)
+WineFood.create(Wine_id: 93, food_id: 7)
+WineFood.create(Wine_id: 94, food_id: 4)
+WineFood.create(Wine_id: 94, food_id: 12)
+WineFood.create(Wine_id: 94, food_id: 8)
+WineFood.create(Wine_id: 94, food_id: 5)
+WineFood.create(Wine_id: 95, food_id: 1)
+WineFood.create(Wine_id: 95, food_id: 13)
+WineFood.create(Wine_id: 95, food_id: 9)
+WineFood.create(Wine_id: 95, food_id: 2)
+WineFood.create(Wine_id: 96, food_id: 12)
+WineFood.create(Wine_id: 96, food_id: 13)
+WineFood.create(Wine_id: 96, food_id: 11)
+WineFood.create(Wine_id: 96, food_id: 7)
+WineFood.create(Wine_id: 96, food_id: 3)
+WineFood.create(Wine_id: 97, food_id: 1)
+WineFood.create(Wine_id: 97, food_id: 13)
+WineFood.create(Wine_id: 97, food_id: 9)
+WineFood.create(Wine_id: 97, food_id: 2)
+WineFood.create(Wine_id: 98, food_id: 1)
+WineFood.create(Wine_id: 98, food_id: 13)
+WineFood.create(Wine_id: 98, food_id: 7)
+WineFood.create(Wine_id: 98, food_id: 2)
+WineFood.create(Wine_id: 98, food_id: 3)
+WineFood.create(Wine_id: 99, food_id: 4)
+WineFood.create(Wine_id: 99, food_id: 12)
+WineFood.create(Wine_id: 99, food_id: 8)
+WineFood.create(Wine_id: 99, food_id: 5)
+WineFood.create(Wine_id: 100, food_id: 4)
+WineFood.create(Wine_id: 100, food_id: 12)
+WineFood.create(Wine_id: 100, food_id: 8)
+WineFood.create(Wine_id: 100, food_id: 5)
+
+puts "Drink up!🥂" 
 
 
 

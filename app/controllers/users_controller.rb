@@ -5,10 +5,10 @@ class UsersController < ApplicationController
     end
 
     def show
-        user = User.find_by(id: params[:id])
+        user = User.find_by(id: session[:user_id])
         if user
             render json: user
-        else render json: {error: "User not found"}, status: :not_found
+        else render json: {error: "Not authorized"}, status: :unauthorized
         end
     end
 
@@ -29,6 +29,12 @@ class UsersController < ApplicationController
             render json: {error: "User not found"}, status: :not_found
         end
 
+    end
+    def destroy 
+        user = User.find_by(id: params[:id])
+        if user
+            user.destroy
+        end
     end
 
     private

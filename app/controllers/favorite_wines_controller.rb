@@ -1,2 +1,3 @@
 class FavoriteWinesController < ApplicationController
+    
 end

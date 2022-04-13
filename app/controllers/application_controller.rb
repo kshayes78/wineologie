@@ -5,4 +5,6 @@ class ApplicationController < ActionController::API
     def logged_in_user 
         @current_user = User.first
     end 
+
+  
 end

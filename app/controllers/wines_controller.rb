@@ -4,10 +4,7 @@ class WinesController < ApplicationController
         render json: wines
     end
 
-    # def my_wines
-    #     @current_user.wines
-    # end
-   
+    
     def suggested_wines
         if params[:price] == '$'
             price_range = ..50
@@ -23,7 +20,7 @@ class WinesController < ApplicationController
                             wine.foods.one? {|food| food.name == params[:food]} 
                         end 
 
-        suggested_wine_list = filtered_by_food.sample(3)
+        suggested_wine_list = filtered_by_food.sample(5)
         
         render json: suggested_wine_list
     end

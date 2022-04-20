@@ -7,8 +7,10 @@ class WinesController < ApplicationController
     
     def suggested_wines
         if params[:price] == '$'
-            price_range = ..50
+            price_range = ..20
         elsif params[:price] == '$$'
+            price_range = 20..50
+        elsif params[:price] == '$$$'
             price_range = 50..100
         else 
             price_range = 100...

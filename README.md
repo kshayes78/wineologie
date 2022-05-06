@@ -1,24 +1,3 @@
-# README
+Flatiron School Phase 5 - CAPSTONE PROJECT (BACK-END)
+Wineologie is a wine selector app that allows the user to receive wine suggestions based on their preferences (price, wine type, and food pairing). 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
